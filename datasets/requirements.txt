@@ -1,0 +1,7 @@
+python-dotenv==1.0.1
+matplotlib==3.7.0
+ydata-profiling==4.9.0
+pandas==2.2.2
+wordcloud==1.9.3
+tqdm==4.64.1
+imblearn

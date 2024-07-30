@@ -1,0 +1,6 @@
+outs:
+- md5: 1e7fcb03d92660997fc319e9a561d4eb
+  size: 10176095
+  isexec: true
+  hash: md5
+  path: parallel.json

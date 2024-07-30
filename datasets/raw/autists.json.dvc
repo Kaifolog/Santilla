@@ -1,0 +1,6 @@
+outs:
+- md5: 271f9a7fd1ff58484f81de8d28c27b74
+  size: 10562069
+  isexec: true
+  hash: md5
+  path: autists.json

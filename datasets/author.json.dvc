@@ -1,0 +1,6 @@
+outs:
+- md5: 607caf570c89ec1389fb65dc0a810e96
+  size: 15882930
+  isexec: true
+  hash: md5
+  path: author.json

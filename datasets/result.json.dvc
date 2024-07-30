@@ -1,0 +1,6 @@
+outs:
+- md5: ea5c0fe41885b7b84197e33a2986609b
+  size: 70348026
+  isexec: true
+  hash: md5
+  path: result.json

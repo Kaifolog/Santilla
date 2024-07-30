@@ -1,0 +1,6 @@
+outs:
+- md5: a3dca3da66b52d9abb964097a58c19cd
+  size: 40212358
+  isexec: true
+  hash: md5
+  path: gycha.json
