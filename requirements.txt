@@ -5,3 +5,6 @@ pandas==2.2.2
 wordcloud==1.9.3
 tqdm==4.64.1
 imblearn
+mlflow==2.14.3
+datasets==2.18.0
+scikit-learn==1.2.1
