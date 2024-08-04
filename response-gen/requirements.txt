@@ -1,0 +1,4 @@
+torch==2.3.0
+transformers[torch]==4.40.0
+# openapi
+python-dotenv==1.0.1
