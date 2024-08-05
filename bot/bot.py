@@ -41,6 +41,25 @@ async def classify_handler(message: Message) -> None:
                 await message.answer("Something went wrong.")
 
 
+@dp.message(Command("generate"))
+async def generate_handler(message: Message) -> None:
+    if len(message.text.split()) > 1:
+        text = " ".join(message.text.split()[1:])
+    elif message.reply_to_message:
+        text = message.reply_to_message.text
+    else:
+        await message.answer("Nothing to think of.")
+        return
+
+    async with aiohttp.ClientSession() as session:
+        async with session.post(f"{configs['RESPONCE-GEN_URL']}?text={text}") as resp:
+            if resp.status == 200:
+                resp_json = await resp.json()
+                await message.reply(str(resp_json))
+            else:
+                await message.answer("Something went wrong.")
+
+
 async def main() -> None:
     bot = Bot(
         token=configs["TOKEN"], default=DefaultBotProperties(parse_mode=ParseMode.HTML)

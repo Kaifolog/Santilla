@@ -9,9 +9,16 @@ services:
     command: python3 bot.py
     depends_on:
       - classifier
+      - response-gen
   classifier:
     restart: always
     build:
       context: .
       dockerfile: ./classifier/Dockerfile
     command: bentoml serve service:Classification
+  response-gen:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./response-gen/Dockerfile
+    command: fastapi run service.py
